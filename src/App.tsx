@@ -9,6 +9,8 @@ import LandingPage from './pages/LandingPage';
 import ThoughtSlateDashboard from './pages/ThoughtSlateDashboard';
 import UserDetails from './pages/UserDetails';
 import ResetData from './ResetData';
+import InstantFeedDashboard from './pages/InstantFeedDashboard';
+import InstantFeedUserDetails from './pages/InstantFeedUserDetails';
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -102,6 +104,8 @@ function App() {
           <Route path="/thought-slate" element={<ThoughtSlateDashboard />} />
           <Route path="/thought-slate/user/:uid" element={<UserDetails />} />
           <Route path="/thought-slate/reset" element={<ResetData />} />
+          <Route path="/instantfeed" element={<InstantFeedDashboard />} />
+          <Route path="/instantfeed/user/:userId" element={<InstantFeedUserDetails />} />
         </Routes>
       </Layout>
     </Router>
